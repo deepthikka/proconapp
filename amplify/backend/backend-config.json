@@ -1,6 +1,6 @@
 {
   "auth": {
-    "proconapp3221079e": {
+    "proconapp16c0bf24": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],

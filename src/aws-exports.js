@@ -3,10 +3,10 @@
 
 const awsmobile = {
     "aws_project_region": "us-east-1",
-    "aws_cognito_identity_pool_id": "us-east-1:50d89f70-1389-4dcf-9040-bb21101a4183",
+    "aws_cognito_identity_pool_id": "us-east-1:ae26273a-9872-4983-ad75-c65d7d30e0dd",
     "aws_cognito_region": "us-east-1",
-    "aws_user_pools_id": "us-east-1_R6e4RWljj",
-    "aws_user_pools_web_client_id": "26n6igbmngppph8r57tt7u0o8u",
+    "aws_user_pools_id": "us-east-1_6QGipfyef",
+    "aws_user_pools_web_client_id": "1chfaoglph9e05emqp0itl1k4f",
     "oauth": {
         "domain": "proconapp-staging.auth.us-east-1.amazoncognito.com",
         "scope": [
@@ -16,9 +16,9 @@ const awsmobile = {
             "profile",
             "aws.cognito.signin.user.admin"
         ],
-        "redirectSignIn": "http://localhost:3000/profile",
-        "redirectSignOut": "http://localhost:3000/home",
-        "responseType": "code"
+        "redirectSignIn": "http://localhost:3000/profile/",
+        "redirectSignOut": "http://localhost:3000/",
+        "responseType": "token"
     },
     "federationTarget": "COGNITO_USER_POOLS",
     "aws_cognito_login_mechanisms": [

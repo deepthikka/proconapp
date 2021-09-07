@@ -1,25 +1,16 @@
 import React from 'react';
 import { API, graphqlOperation } from "aws-amplify";
 import { listCategories } from "./../graphql/queries";
-import { Auth } from 'aws-amplify';
-import {
-  Redirect
-} from "react-router-dom";
 
 export default class Home extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      loggedIn: false
-    }
+    this.state = {}
   }
 
   componentDidMount() {
     this.listCategory();
-    // Auth.currentAuthenticatedUser()
-    // .then(() => this.setState({loggedIn: true}))
-    // .catch(() => this.setState({loggedIn: false}));
   }
 
   listCategory = () => {

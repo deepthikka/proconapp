@@ -10,9 +10,7 @@ import { Auth } from 'aws-amplify';
 import logo from './logo.png';
 import './css/App.css';
 import Home from './components/Home';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import Profile from './components/Signup';
+import Profile from './components/Profile';
 
 //import { createCategory } from "./graphql/mutations";
 
@@ -78,8 +76,6 @@ function App() {
       <Switch>
       <Route exact path="/" component={Home}/>
       <Route exact path="/home" component={Home}/>
-      <Route exact path="/login" component={Login} />
-      <Route exact path="/signup" component={Signup} />
       <Route exact path="/profile" component={Profile} />
    </Switch>
     </div>
