@@ -7,7 +7,9 @@ export default class Signup extends React.Component {
   }
   render(){
     return (
-       <h1>Signup</h1>
+      <div className='page-body'>
+       <h1 className="text-white">Sign Up</h1>
+       </div>
     );
   }
 }

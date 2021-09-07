@@ -24,7 +24,7 @@ export default class Login extends React.Component {
 
     return (
       <div className='page-body'>
-       <h1 className="text-white">Login page</h1>
+       <h1 className="text-white">Profile page</h1>
        </div>
     );
   }
