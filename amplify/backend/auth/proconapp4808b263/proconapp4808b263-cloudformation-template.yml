@@ -178,6 +178,10 @@ Parameters:
   authProviders:
     Type: CommaDelimitedList
       
+  
+  thirdPartyAuth:
+    Type: String
+            
   hostedUIProviderCreds:
     Type: String
   
@@ -185,10 +189,6 @@ Parameters:
   facebookAppId:
     Type: String
   
-            
-  
-  thirdPartyAuth:
-    Type: String
             
   oAuthMetadata:
     Type: String

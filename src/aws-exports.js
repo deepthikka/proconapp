@@ -16,10 +16,8 @@ const awsmobile = {
             "profile",
             "aws.cognito.signin.user.admin"
         ],
-        // "redirectSignIn": "http://localhost:3000/,https://proconapp-staging.auth.us-east-1.amazoncognito.com/",
-        // "redirectSignOut": "http://localhost:3000/,https://proconapp-staging.auth.us-east-1.amazoncognito.com/",
-        "redirectSignIn": "http://localhost:3000/",
-        "redirectSignOut": "http://localhost:3000/",
+        "redirectSignIn": "http://localhost:3000/,https://proconapp-staging.auth.us-east-1.amazoncognito.com/",
+        "redirectSignOut": "http://localhost:3000/,https://proconapp-staging.auth.us-east-1.amazoncognito.com/",
         "responseType": "token"
     },
     "federationTarget": "COGNITO_USER_AND_IDENTITY_POOLS",

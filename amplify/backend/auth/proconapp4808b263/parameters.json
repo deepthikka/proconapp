@@ -58,10 +58,8 @@
     "triggers": "{}",
     "hostedUI": true,
     "hostedUIDomainName": "proconapp",
-    "authProvidersUserPool": [
-        "Facebook"
-    ],
-    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}}]",
+    "authProvidersUserPool": [],
+    "hostedUIProviderMeta": "[]",
     "parentStack": {
         "Ref": "AWS::StackId"
     },
