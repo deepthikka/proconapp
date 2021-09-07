@@ -1,13 +1,13 @@
 {
   "auth": {
-    "proconapp4808b263": {
+    "proconapp420ec692": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
       "customAuth": false,
       "frontendAuthConfig": {
         "loginMechanisms": [
-          "PREFERRED_USERNAME"
+          "EMAIL"
         ],
         "signupAttributes": [
           "EMAIL"

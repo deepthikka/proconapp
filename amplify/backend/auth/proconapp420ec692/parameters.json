@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "proconapp4808b263_identitypool_4808b263",
+    "identityPoolName": "proconapp420ec692_identitypool_420ec692",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "procon4808b263",
-    "userPoolName": "proconapp4808b263_userpool_4808b263",
+    "resourceNameTruncated": "procon420ec692",
+    "userPoolName": "proconapp420ec692_userpool_420ec692",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -21,7 +21,7 @@
         "email"
     ],
     "aliasAttributes": [
-        "preferred_username"
+        "email"
     ],
     "userpoolClientGenerateSecret": false,
     "userpoolClientRefreshTokenValidity": 30,
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "procon4808b263_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "procon420ec692_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "4808b263",
-    "resourceName": "proconapp4808b263",
+    "sharedId": "420ec692",
+    "resourceName": "proconapp420ec692",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -52,15 +52,5 @@
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
-    "dependsOn": [],
-    "userPoolGroups": false,
-    "adminQueries": false,
-    "triggers": "{}",
-    "hostedUI": false,
-    "parentStack": {
-        "Ref": "AWS::StackId"
-    },
-    "breakCircularDependency": true,
-    "permissions": [],
-    "authProviders": []
+    "dependsOn": []
 }
