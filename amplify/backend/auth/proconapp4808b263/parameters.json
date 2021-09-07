@@ -48,7 +48,7 @@
             "Arn"
         ]
     },
-    "useDefault": "manual",
+    "useDefault": "default",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
@@ -56,18 +56,11 @@
     "userPoolGroups": false,
     "adminQueries": false,
     "triggers": "{}",
-    "hostedUI": true,
-    "hostedUIDomainName": "proconapp",
-    "authProvidersUserPool": [],
-    "hostedUIProviderMeta": "[]",
+    "hostedUI": false,
     "parentStack": {
         "Ref": "AWS::StackId"
     },
     "breakCircularDependency": true,
     "permissions": [],
-    "authProviders": [
-        "graph.facebook.com"
-    ],
-    "thirdPartyAuth": true,
-    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"implicit\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\",\"https://proconapp-staging.auth.us-east-1.amazoncognito.com/\"],\"LogoutURLs\":[\"http://localhost:3000/\",\"https://proconapp-staging.auth.us-east-1.amazoncognito.com/\"]}"
+    "authProviders": []
 }

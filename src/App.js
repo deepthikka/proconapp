@@ -11,7 +11,9 @@ import './css/App.css';
 import Home from './components/Home';
 import Login from './components/Login';
 import Signup from './components/Signup';
-import { API } from 'aws-amplify';
+import Amplify, { API, graphqlOperation } from "aws-amplify";
+import { createCategory } from "./graphql/mutations";
+import { listCategories } from "./graphql/queries";
 
 function App() {
 
@@ -20,13 +22,30 @@ function App() {
     console.log('user : ' + user)
   }
 
+  async function createNewCategory() {
+    const todo = {
+      name: "Education",
+      description: "Events related to Education and Learning",
+    };
+    return await API.graphql(graphqlOperation(createCategory, { input: todo }));
+  }
+
+  async function listCategory() {
+    API.graphql(graphqlOperation(listCategories)).then((evt) => {
+          evt.data.listCategories.items.map((cat, i) => {
+            console.log(cat.name +  cat.description);
+          });
+        });
+  }
+
   return (
     <Router>
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" width='200' height='200' />
         <button onClick={() => Auth.federatedSignIn()}> Sign In</button>
-        <button onClick={checkUser}> Check User</button>
+        <button onClick={createNewCategory}> Create Category</button>
+        <button onClick={listCategory}> List Category</button>
         <button onClick={() => Auth.signOut()}> Sign Out</button>
       </header>
       <Switch>

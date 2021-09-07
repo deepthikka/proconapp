@@ -16,14 +16,13 @@ const awsmobile = {
             "profile",
             "aws.cognito.signin.user.admin"
         ],
-        "redirectSignIn": "https://proconapp-staging.auth.us-east-1.amazoncognito.com/",
-        "redirectSignOut": "https://proconapp-staging.auth.us-east-1.amazoncognito.com/",
+        "redirectSignIn": "http://localhost:3000/",
+        "redirectSignOut": "http://localhost:3000/",
         "responseType": "token"
     },
     "federationTarget": "COGNITO_USER_AND_IDENTITY_POOLS",
     "aws_cognito_login_mechanisms": [
-        "PREFERRED_USERNAME",
-        "FACEBOOK"
+        "PREFERRED_USERNAME"
     ],
     "aws_cognito_signup_attributes": [
         "EMAIL"
@@ -35,7 +34,11 @@ const awsmobile = {
     "aws_cognito_password_protection_settings": {
         "passwordPolicyMinLength": 8,
         "passwordPolicyCharacters": []
-    }
+    },
+    "aws_appsync_graphqlEndpoint": "https://v4deygozfza4jejgfqu7go2t2i.appsync-api.us-east-1.amazonaws.com/graphql",
+    "aws_appsync_region": "us-east-1",
+    "aws_appsync_authenticationType": "API_KEY",
+    "aws_appsync_apiKey": "da2-koksr446w5ddxmw4njich2dexu"
 };
 
 
