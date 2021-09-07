@@ -24,8 +24,8 @@ function App() {
 
   async function createNewCategory() {
     const todo = {
-      name: "Education",
-      description: "Events related to Education and Learning",
+      name: "Entertainment",
+      description: "Events related to Entertainment",
     };
     return await API.graphql(graphqlOperation(createCategory, { input: todo }));
   }
@@ -33,7 +33,7 @@ function App() {
   async function listCategory() {
     API.graphql(graphqlOperation(listCategories)).then((evt) => {
           evt.data.listCategories.items.map((cat, i) => {
-            console.log(cat.name +  cat.description);
+            console.log(cat.name + " " +  cat.description);
           });
         });
   }
