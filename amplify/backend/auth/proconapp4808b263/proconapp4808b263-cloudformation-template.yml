@@ -135,10 +135,6 @@ Parameters:
     Type: CommaDelimitedList
       
   
-  thirdPartyAuth:
-    Type: String
-            
-  
   userPoolGroups:
     Type: String
             
@@ -166,15 +162,6 @@ Parameters:
     Type: String
   
             
-  hostedUIProviderCreds:
-    Type: String
-  
-            
-  oAuthMetadata:
-    Type: String
-  
-            
-            
       
   parentStack:
     Type: String
@@ -191,6 +178,23 @@ Parameters:
   authProviders:
     Type: CommaDelimitedList
       
+  hostedUIProviderCreds:
+    Type: String
+  
+            
+  facebookAppId:
+    Type: String
+  
+            
+  
+  thirdPartyAuth:
+    Type: String
+            
+  oAuthMetadata:
+    Type: String
+  
+            
+            
 Conditions:
   ShouldNotCreateEnvResources: !Equals [ !Ref env, NONE ]
   
@@ -799,6 +803,14 @@ Resources:
             - cognito-idp.${region}.amazonaws.com/${client}
             - { region: !Ref "AWS::Region",  client: !Ref UserPool}
             
+      SupportedLoginProviders:
+        
+        graph.facebook.com: !Ref facebookAppId
+        
+        
+        
+        
+      
       AllowUnauthenticatedIdentities: !Ref allowUnauthenticatedIdentities
       
     
@@ -855,6 +867,9 @@ Outputs :
   
   
   
+  
+  FacebookWebClient:
+    Value: !Ref facebookAppId
   
   
   
