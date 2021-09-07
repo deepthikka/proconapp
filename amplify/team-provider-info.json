@@ -14,6 +14,12 @@
     "categories": {
       "auth": {
         "proconapp16c0bf24": {}
+      },
+      "function": {
+        "fetchCategory": {
+          "deploymentBucketName": "amplify-amplifyec077140991e4-staging-05642-deployment",
+          "s3Key": "amplify-builds/fetchCategory-444a345a4e42344c6c78-build.zip"
+        }
       }
     }
   }
