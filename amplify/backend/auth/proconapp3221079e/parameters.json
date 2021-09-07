@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "proconapp420ec692_identitypool_420ec692",
+    "identityPoolName": "proconapp3221079e_identitypool_3221079e",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "procon420ec692",
-    "userPoolName": "proconapp420ec692_userpool_420ec692",
+    "resourceNameTruncated": "procon3221079e",
+    "userPoolName": "proconapp3221079e_userpool_3221079e",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -31,10 +31,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "procon420ec692_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "procon3221079e_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "420ec692",
-    "resourceName": "proconapp420ec692",
+    "sharedId": "3221079e",
+    "resourceName": "proconapp3221079e",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -48,7 +48,14 @@
             "Arn"
         ]
     },
-    "useDefault": "default",
+    "useDefault": "defaultSocial",
+    "hostedUI": true,
+    "hostedUIDomainName": "proconapp",
+    "authProvidersUserPool": [
+        "Facebook"
+    ],
+    "hostedUIProviderMeta": "[{\"ProviderName\":\"Facebook\",\"authorize_scopes\":\"email,public_profile\",\"AttributeMapping\":{\"email\":\"email\",\"username\":\"id\"}}]",
+    "oAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"http://localhost:3000/\"],\"LogoutURLs\":[\"http://localhost:3000/\"]}",
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,
